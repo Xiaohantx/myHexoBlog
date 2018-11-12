@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="表单使用使用过程 构建表单 服务器处理接口 配置表单 验证表单 表单控件 form label select  选项分组    禁用状态   datalist option   textarea  progress  meter  展示效果    fieldset 分组表单控件   button 输入控件 input text search tel url email   number passw">
+<meta name="keywords" content="表单,服务器接口">
+<meta property="og:type" content="article">
+<meta property="og:title" content="表单元素">
+<meta property="og:url" content="http://yoursite.com/2018/06/08/web/html/表单元素/index.html">
+<meta property="og:site_name" content="Gitgit">
+<meta property="og:description" content="表单使用使用过程 构建表单 服务器处理接口 配置表单 验证表单 表单控件 form label select  选项分组    禁用状态   datalist option   textarea  progress  meter  展示效果    fieldset 分组表单控件   button 输入控件 input text search tel url email   number passw">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523165743.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523170048.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523170110.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523170212.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523170258.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523171505.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523171551.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523171657.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523171804.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523172321.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523172423.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523172823.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523172957.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523173038.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523173056.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523173136.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523175150.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523175225.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523175258.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523175400.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523235203.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523235216.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523235259.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523235815.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524002221.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524003041.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524003135.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524005103.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524005418.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524005659.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010053.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010133.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010201.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010233.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010258.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010340.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010400.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010445.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010508.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010538.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010625.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010700.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010724.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010739.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010803.png">
+<meta property="og:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010834.png">
+<meta property="og:updated_time" content="2018-11-12T03:28:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="表单元素">
+<meta name="twitter:description" content="表单使用使用过程 构建表单 服务器处理接口 配置表单 验证表单 表单控件 form label select  选项分组    禁用状态   datalist option   textarea  progress  meter  展示效果    fieldset 分组表单控件   button 输入控件 input text search tel url email   number passw">
+<meta name="twitter:image" content="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523165743.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Gitgit" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/06/08/web/html/表单元素/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>表单元素 | Gitgit</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Gitgit</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">分享发现与探索</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/08/web/html/表单元素/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yin Han">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://pic.dooufo.cn/markdown/20181111031652.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gitgit">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">表单元素
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-08 14:36:59" itemprop="dateCreated datePublished" datetime="2018-06-08T14:36:59+08:00">2018-06-08</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-12 11:28:00" itemprop="dateModified" datetime="2018-11-12T11:28:00+08:00">2018-11-12</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/web/html/" itemprop="url" rel="index"><span itemprop="name">html</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/08/web/html/表单元素/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/06/08/web/html/表单元素/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/06/08/web/html/表单元素/" class="leancloud_visitors" data-flag-title="表单元素">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="表单使用"><a href="#表单使用" class="headerlink" title="表单使用"></a>表单使用</h2><h3 id="使用过程"><a href="#使用过程" class="headerlink" title="使用过程"></a>使用过程</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523165743.png" alt=""></p>
+<h4 id="构建表单"><a href="#构建表单" class="headerlink" title="构建表单"></a>构建表单</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523170048.png" alt=""></p>
+<h3 id="服务器处理接口"><a href="#服务器处理接口" class="headerlink" title="服务器处理接口"></a>服务器处理接口</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523170110.png" alt=""></p>
+<h3 id="配置表单"><a href="#配置表单" class="headerlink" title="配置表单"></a>配置表单</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523170212.png" alt=""></p>
+<h3 id="验证表单"><a href="#验证表单" class="headerlink" title="验证表单"></a>验证表单</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523170258.png" alt=""></p>
+<h2 id="表单控件"><a href="#表单控件" class="headerlink" title="表单控件"></a>表单控件</h2><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523171505.png" alt=""></p>
+<h3 id="form"><a href="#form" class="headerlink" title="form"></a>form</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523171551.png" alt=""></p>
+<h3 id="label"><a href="#label" class="headerlink" title="label"></a>label</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523171657.png" alt=""></p>
+<h3 id="select"><a href="#select" class="headerlink" title="select"></a>select</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523171804.png" alt=""></p>
+<ul>
+<li>选项分组</li>
+</ul>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523172321.png" alt=""></p>
+<ul>
+<li>禁用状态</li>
+</ul>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523172423.png" alt=""></p>
+<h3 id="datalist"><a href="#datalist" class="headerlink" title="datalist"></a>datalist</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523172823.png" alt=""></p>
+<h3 id="option"><a href="#option" class="headerlink" title="option"></a>option</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523172957.png" alt=""></p>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523173038.png" alt=""></p>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523173056.png" alt=""></p>
+<h3 id="textarea"><a href="#textarea" class="headerlink" title="textarea"></a>textarea</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523173136.png" alt=""></p>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523175150.png" alt=""></p>
+<h3 id="progress"><a href="#progress" class="headerlink" title="progress"></a>progress</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523175225.png" alt=""></p>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523175258.png" alt=""></p>
+<h3 id="meter"><a href="#meter" class="headerlink" title="meter"></a>meter</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523175400.png" alt=""></p>
+<ul>
+<li>展示效果</li>
+</ul>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523235203.png" alt=""></p>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523235216.png" alt=""></p>
+<h3 id="fieldset"><a href="#fieldset" class="headerlink" title="fieldset"></a>fieldset</h3><ul>
+<li>分组表单控件</li>
+</ul>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523235259.png" alt=""></p>
+<h3 id="button"><a href="#button" class="headerlink" title="button"></a>button</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180523235815.png" alt=""></p>
+<h2 id="输入控件"><a href="#输入控件" class="headerlink" title="输入控件"></a>输入控件</h2><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524002221.png" alt=""></p>
+<h3 id="input"><a href="#input" class="headerlink" title="input"></a>input</h3><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524003041.png" alt=""></p>
+<h4 id="text"><a href="#text" class="headerlink" title="text"></a>text</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524003135.png" alt=""></p>
+<h4 id="search"><a href="#search" class="headerlink" title="search"></a>search</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524005103.png" alt=""></p>
+<h4 id="tel"><a href="#tel" class="headerlink" title="tel"></a>tel</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524005418.png" alt=""></p>
+<h4 id="url"><a href="#url" class="headerlink" title="url"></a>url</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524005659.png" alt=""></p>
+<h4 id="email"><a href="#email" class="headerlink" title="email"></a>email</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010053.png" alt=""></p>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010133.png" alt=""></p>
+<p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010201.png" alt=""></p>
+<h4 id="number"><a href="#number" class="headerlink" title="number"></a>number</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010233.png" alt=""></p>
+<h4 id="password"><a href="#password" class="headerlink" title="password"></a>password</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010258.png" alt=""></p>
+<h4 id="checkbox"><a href="#checkbox" class="headerlink" title="checkbox"></a>checkbox</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010340.png" alt=""></p>
+<h4 id="radio"><a href="#radio" class="headerlink" title="radio"></a>radio</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010400.png" alt=""></p>
+<h4 id="file"><a href="#file" class="headerlink" title="file"></a>file</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010445.png" alt=""></p>
+<h4 id="range"><a href="#range" class="headerlink" title="range"></a>range</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010508.png" alt=""></p>
+<h4 id="color"><a href="#color" class="headerlink" title="color"></a>color</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010538.png" alt=""></p>
+<h4 id="date"><a href="#date" class="headerlink" title="date"></a>date</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010625.png" alt=""></p>
+<h4 id="month"><a href="#month" class="headerlink" title="month"></a>month</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010700.png" alt=""></p>
+<h4 id="week"><a href="#week" class="headerlink" title="week"></a>week</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010724.png" alt=""></p>
+<h4 id="time"><a href="#time" class="headerlink" title="time"></a>time</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010739.png" alt=""></p>
+<h4 id="datetime-local"><a href="#datetime-local" class="headerlink" title="datetime-local"></a>datetime-local</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010803.png" alt=""></p>
+<h4 id="reset-submit-button"><a href="#reset-submit-button" class="headerlink" title="reset/submit/button"></a>reset/submit/button</h4><p><img src="https://pic-1251023912.coscd.myqcloud.com/markdown/20180524010834.png" alt=""></p>
+<h4 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h4><p><a href="https://caniuse.com/" target="_blank" rel="noopener">https://caniuse.com/</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/表单/" rel="tag"># 表单</a>
+          
+            <a href="/tags/服务器接口/" rel="tag"># 服务器接口</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/08/web/html/超链接/" rel="next" title="超链接">
+                <i class="fa fa-chevron-left"></i> 超链接
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/15/web/css/css/" rel="prev" title="css">
+                css <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://pic.dooufo.cn/markdown/20181111031652.png" alt="Yin Han">
+            
+              <p class="site-author-name" itemprop="name">Yin Han</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">47</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">165</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/xiaohantx" title="GitHub &rarr; https://github.com/xiaohantx" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:xiaohan.web@gmail.com" title="E-Mail &rarr; mailto:xiaohan.web@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.v2ex.com/member/xiaohantx" title="V2ex &rarr; https://www.v2ex.com/member/xiaohantx" rel="noopener" target="_blank"><i class="fa fa-fw fa-grav"></i>V2ex</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="/resume" title="Job &rarr; resume"><i class="fa fa-fw fa-linkedin"></i>Job</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#表单使用"><span class="nav-number">1.</span> <span class="nav-text">表单使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用过程"><span class="nav-number">1.1.</span> <span class="nav-text">使用过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#构建表单"><span class="nav-number">1.1.1.</span> <span class="nav-text">构建表单</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器处理接口"><span class="nav-number">1.2.</span> <span class="nav-text">服务器处理接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置表单"><span class="nav-number">1.3.</span> <span class="nav-text">配置表单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证表单"><span class="nav-number">1.4.</span> <span class="nav-text">验证表单</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表单控件"><span class="nav-number">2.</span> <span class="nav-text">表单控件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#form"><span class="nav-number">2.1.</span> <span class="nav-text">form</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#label"><span class="nav-number">2.2.</span> <span class="nav-text">label</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#select"><span class="nav-number">2.3.</span> <span class="nav-text">select</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#datalist"><span class="nav-number">2.4.</span> <span class="nav-text">datalist</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#option"><span class="nav-number">2.5.</span> <span class="nav-text">option</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#textarea"><span class="nav-number">2.6.</span> <span class="nav-text">textarea</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#progress"><span class="nav-number">2.7.</span> <span class="nav-text">progress</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#meter"><span class="nav-number">2.8.</span> <span class="nav-text">meter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fieldset"><span class="nav-number">2.9.</span> <span class="nav-text">fieldset</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#button"><span class="nav-number">2.10.</span> <span class="nav-text">button</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输入控件"><span class="nav-number">3.</span> <span class="nav-text">输入控件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#input"><span class="nav-number">3.1.</span> <span class="nav-text">input</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#text"><span class="nav-number">3.1.1.</span> <span class="nav-text">text</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#search"><span class="nav-number">3.1.2.</span> <span class="nav-text">search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tel"><span class="nav-number">3.1.3.</span> <span class="nav-text">tel</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#url"><span class="nav-number">3.1.4.</span> <span class="nav-text">url</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#email"><span class="nav-number">3.1.5.</span> <span class="nav-text">email</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#number"><span class="nav-number">3.1.6.</span> <span class="nav-text">number</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#password"><span class="nav-number">3.1.7.</span> <span class="nav-text">password</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#checkbox"><span class="nav-number">3.1.8.</span> <span class="nav-text">checkbox</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#radio"><span class="nav-number">3.1.9.</span> <span class="nav-text">radio</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#file"><span class="nav-number">3.1.10.</span> <span class="nav-text">file</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#range"><span class="nav-number">3.1.11.</span> <span class="nav-text">range</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#color"><span class="nav-number">3.1.12.</span> <span class="nav-text">color</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#date"><span class="nav-number">3.1.13.</span> <span class="nav-text">date</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#month"><span class="nav-number">3.1.14.</span> <span class="nav-text">month</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#week"><span class="nav-number">3.1.15.</span> <span class="nav-text">week</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#time"><span class="nav-number">3.1.16.</span> <span class="nav-text">time</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#datetime-local"><span class="nav-number">3.1.17.</span> <span class="nav-text">datetime-local</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#reset-submit-button"><span class="nav-number">3.1.18.</span> <span class="nav-text">reset/submit/button</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#兼容性"><span class="nav-number">3.1.19.</span> <span class="nav-text">兼容性</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yin Han</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v6.5.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.5.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'wU3im0km3KK4VAPn4w5FDaoM-gzGzoHsz',
+        appKey: 'BhOINPyO8aE4b30xcpMChgs5',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: true
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+</body>
+</html>

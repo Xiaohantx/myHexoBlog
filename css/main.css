@@ -1869,7 +1869,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a817ff;
+  background: #e43266;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3009,23 +3009,23 @@ ul.breadcrumb li+li:last-child {
   }
 }
 .feed-link {
-  border: 1px solid #a0c8a0 !important;
+  border: 1px solid #fc6423 !important;
   border-radius: 20rem;
   overflow: hidden;
 }
 .feed-link:hover a,
 .feed-link:hover i {
-  background: #a0c8a0;
+  background: #fc6423;
   color: #fff !important;
 }
-.site-meta,
-.headband,
-.posts-expand .post-title-link:before {
-  background: #a0c8a0;
+.posts-expand .post-title-link:before,
+.v .vlist .vcard .vhead .vnick:before {
+  background: #fc6423 !important;
 }
 .feed-link a,
-.feed-link i {
-  color: #a0c8a0 !important;
+.feed-link i,
+.vnick {
+  color: #fc6423 !important;
 }
 .site-subtitle {
   color: #fff;

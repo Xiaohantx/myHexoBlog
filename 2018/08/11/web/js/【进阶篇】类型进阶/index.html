@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="原始类型和对象的区别JavaScript的数据类型 原始类型 原始类型：相等比较 对象类型 对象类型：相等比较  对象类型：另一个名字 复制变量的值复制变量的值 复制原始类型的值 复制对象类型的值  类型转换类型转换场景 类型转换场景：相等性（==）  类型转换   显示类型转换 显示类型转换：转字符串  显示类型转换：转数值 对象类型转字符串 对象类型转数值 类型识别类型识别 typeof的局限">
+<meta name="keywords" content="进阶篇,数据类型的区别,复制变量的值,类型转换,类型识别,Symbol">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【进阶篇】类型进阶">
+<meta property="og:url" content="http://yoursite.com/2018/08/11/web/js/【进阶篇】类型进阶/index.html">
+<meta property="og:site_name" content="Gitgit">
+<meta property="og:description" content="原始类型和对象的区别JavaScript的数据类型 原始类型 原始类型：相等比较 对象类型 对象类型：相等比较  对象类型：另一个名字 复制变量的值复制变量的值 复制原始类型的值 复制对象类型的值  类型转换类型转换场景 类型转换场景：相等性（==）  类型转换   显示类型转换 显示类型转换：转字符串  显示类型转换：转数值 对象类型转字符串 对象类型转数值 类型识别类型识别 typeof的局限">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809223425.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234012.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234047.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234058.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234129.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234252.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234205.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234459.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234529.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234627.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180809234710.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180810002026.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180810002103.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180810002207.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180810002413.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180810002426.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180810002444.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811000459.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811000604.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811000617.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811000633.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811000748.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811000814.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811000838.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811000856.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001007.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001101.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001244.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001319.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001357.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001520.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001539.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001658.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001720.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001818.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001843.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001906.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811001933.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002007.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002115.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002321.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002435.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002453.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002538.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002558.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002646.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002659.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002813.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811002836.png">
+<meta property="og:image" content="https://pic.dooufo.cn/markdown/20180811003148.png">
+<meta property="og:updated_time" content="2018-11-12T03:28:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【进阶篇】类型进阶">
+<meta name="twitter:description" content="原始类型和对象的区别JavaScript的数据类型 原始类型 原始类型：相等比较 对象类型 对象类型：相等比较  对象类型：另一个名字 复制变量的值复制变量的值 复制原始类型的值 复制对象类型的值  类型转换类型转换场景 类型转换场景：相等性（==）  类型转换   显示类型转换 显示类型转换：转字符串  显示类型转换：转数值 对象类型转字符串 对象类型转数值 类型识别类型识别 typeof的局限">
+<meta name="twitter:image" content="https://pic.dooufo.cn/markdown/20180809223425.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Gitgit" type="application/atom+xml">
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/08/11/web/js/【进阶篇】类型进阶/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>【进阶篇】类型进阶 | Gitgit</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Gitgit</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">分享发现与探索</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/11/web/js/【进阶篇】类型进阶/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yin Han">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://pic.dooufo.cn/markdown/20181111031652.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gitgit">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">【进阶篇】类型进阶
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-08-11 00:33:48" itemprop="dateCreated datePublished" datetime="2018-08-11T00:33:48+08:00">2018-08-11</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-12 11:28:00" itemprop="dateModified" datetime="2018-11-12T11:28:00+08:00">2018-11-12</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/web/" itemprop="url" rel="index"><span itemprop="name">web</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/web/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/11/web/js/【进阶篇】类型进阶/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/08/11/web/js/【进阶篇】类型进阶/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/08/11/web/js/【进阶篇】类型进阶/" class="leancloud_visitors" data-flag-title="【进阶篇】类型进阶">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="原始类型和对象的区别"><a href="#原始类型和对象的区别" class="headerlink" title="原始类型和对象的区别"></a>原始类型和对象的区别</h2><h3 id="JavaScript的数据类型"><a href="#JavaScript的数据类型" class="headerlink" title="JavaScript的数据类型"></a>JavaScript的数据类型</h3><p><img src="https://pic.dooufo.cn/markdown/20180809223425.png" alt=""></p>
+<h3 id="原始类型"><a href="#原始类型" class="headerlink" title="原始类型"></a>原始类型</h3><p><img src="https://pic.dooufo.cn/markdown/20180809234012.png" alt=""></p>
+<h3 id="原始类型：相等比较"><a href="#原始类型：相等比较" class="headerlink" title="原始类型：相等比较"></a>原始类型：相等比较</h3><p><img src="https://pic.dooufo.cn/markdown/20180809234047.png" alt=""></p>
+<h3 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h3><p><img src="https://pic.dooufo.cn/markdown/20180809234058.png" alt=""></p>
+<h3 id="对象类型：相等比较"><a href="#对象类型：相等比较" class="headerlink" title="对象类型：相等比较"></a>对象类型：相等比较</h3><p><img src="https://pic.dooufo.cn/markdown/20180809234129.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180809234252.png" alt=""></p>
+<h3 id="对象类型：另一个名字"><a href="#对象类型：另一个名字" class="headerlink" title="对象类型：另一个名字"></a>对象类型：另一个名字</h3><p><img src="https://pic.dooufo.cn/markdown/20180809234205.png" alt=""></p>
+<h2 id="复制变量的值"><a href="#复制变量的值" class="headerlink" title="复制变量的值"></a>复制变量的值</h2><h3 id="复制变量的值-1"><a href="#复制变量的值-1" class="headerlink" title="复制变量的值"></a>复制变量的值</h3><p><img src="https://pic.dooufo.cn/markdown/20180809234459.png" alt=""></p>
+<h3 id="复制原始类型的值"><a href="#复制原始类型的值" class="headerlink" title="复制原始类型的值"></a>复制原始类型的值</h3><p><img src="https://pic.dooufo.cn/markdown/20180809234529.png" alt=""></p>
+<h3 id="复制对象类型的值"><a href="#复制对象类型的值" class="headerlink" title="复制对象类型的值"></a>复制对象类型的值</h3><p><img src="https://pic.dooufo.cn/markdown/20180809234627.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180809234710.png" alt=""></p>
+<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><h3 id="类型转换场景"><a href="#类型转换场景" class="headerlink" title="类型转换场景"></a>类型转换场景</h3><p><img src="https://pic.dooufo.cn/markdown/20180810002026.png" alt=""></p>
+<h3 id="类型转换场景：相等性（-）"><a href="#类型转换场景：相等性（-）" class="headerlink" title="类型转换场景：相等性（==）"></a>类型转换场景：相等性（==）</h3><p><img src="https://pic.dooufo.cn/markdown/20180810002103.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180810002207.png" alt=""></p>
+<h3 id="类型转换-1"><a href="#类型转换-1" class="headerlink" title="类型转换"></a>类型转换</h3><p><img src="https://pic.dooufo.cn/markdown/20180810002413.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180810002426.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180810002444.png" alt=""></p>
+<h3 id="显示类型转换"><a href="#显示类型转换" class="headerlink" title="显示类型转换"></a>显示类型转换</h3><p><img src="https://pic.dooufo.cn/markdown/20180811000459.png" alt=""></p>
+<h3 id="显示类型转换：转字符串"><a href="#显示类型转换：转字符串" class="headerlink" title="显示类型转换：转字符串"></a>显示类型转换：转字符串</h3><p><img src="https://pic.dooufo.cn/markdown/20180811000604.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180811000617.png" alt=""></p>
+<h3 id="显示类型转换：转数值"><a href="#显示类型转换：转数值" class="headerlink" title="显示类型转换：转数值"></a>显示类型转换：转数值</h3><p><img src="https://pic.dooufo.cn/markdown/20180811000633.png" alt=""></p>
+<h3 id="对象类型转字符串"><a href="#对象类型转字符串" class="headerlink" title="对象类型转字符串"></a>对象类型转字符串</h3><p><img src="https://pic.dooufo.cn/markdown/20180811000748.png" alt=""></p>
+<h3 id="对象类型转数值"><a href="#对象类型转数值" class="headerlink" title="对象类型转数值"></a>对象类型转数值</h3><p><img src="https://pic.dooufo.cn/markdown/20180811000814.png" alt=""></p>
+<h2 id="类型识别"><a href="#类型识别" class="headerlink" title="类型识别"></a>类型识别</h2><h3 id="类型识别-1"><a href="#类型识别-1" class="headerlink" title="类型识别"></a>类型识别</h3><p><img src="https://pic.dooufo.cn/markdown/20180811000838.png" alt=""></p>
+<h3 id="typeof的局限性"><a href="#typeof的局限性" class="headerlink" title="typeof的局限性"></a>typeof的局限性</h3><p><img src="https://pic.dooufo.cn/markdown/20180811000856.png" alt=""></p>
+<h3 id="obj-instanceof-constructor"><a href="#obj-instanceof-constructor" class="headerlink" title="obj instanceof constructor"></a>obj instanceof constructor</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001007.png" alt=""></p>
+<h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001101.png" alt=""></p>
+<h3 id="constructor-在某些场景下失效"><a href="#constructor-在某些场景下失效" class="headerlink" title="constructor 在某些场景下失效"></a>constructor 在某些场景下失效</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001244.png" alt=""></p>
+<h3 id="instanceof-和-constructor-不可跨frame"><a href="#instanceof-和-constructor-不可跨frame" class="headerlink" title="instanceof 和 constructor 不可跨frame"></a>instanceof 和 constructor 不可跨frame</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001319.png" alt=""></p>
+<h3 id="duck-typing"><a href="#duck-typing" class="headerlink" title="duck-typing"></a>duck-typing</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001357.png" alt=""></p>
+<h3 id="Object-prototype-toString-call-obj"><a href="#Object-prototype-toString-call-obj" class="headerlink" title="Object.prototype.toString.call(obj)"></a>Object.prototype.toString.call(obj)</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001520.png" alt=""></p>
+<h3 id="类型识别总结"><a href="#类型识别总结" class="headerlink" title="类型识别总结"></a>类型识别总结</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001539.png" alt=""></p>
+<h3 id="检测数组的原生方法：Array-isArray"><a href="#检测数组的原生方法：Array-isArray" class="headerlink" title="检测数组的原生方法：Array.isArray()"></a>检测数组的原生方法：Array.isArray()</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001658.png" alt=""></p>
+<h3 id="DOM元素和宿主对象的检测"><a href="#DOM元素和宿主对象的检测" class="headerlink" title="DOM元素和宿主对象的检测"></a><del>DOM元素和宿主对象的检测</del></h3><p><img src="https://pic.dooufo.cn/markdown/20180811001720.png" alt=""></p>
+<h2 id="模板字面量"><a href="#模板字面量" class="headerlink" title="模板字面量"></a>模板字面量</h2><p><img src="https://pic.dooufo.cn/markdown/20180811001818.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180811001843.png" alt=""></p>
+<h3 id="模板字面量：支持嵌套"><a href="#模板字面量：支持嵌套" class="headerlink" title="模板字面量：支持嵌套"></a>模板字面量：支持嵌套</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001906.png" alt=""></p>
+<h3 id="模板字面量：tagged-template"><a href="#模板字面量：tagged-template" class="headerlink" title="模板字面量：tagged template"></a>模板字面量：tagged template</h3><p><img src="https://pic.dooufo.cn/markdown/20180811001933.png" alt=""></p>
+<h4 id="模板字面量：tagged-template-示例"><a href="#模板字面量：tagged-template-示例" class="headerlink" title="模板字面量：tagged template 示例"></a>模板字面量：tagged template 示例</h4><p><img src="https://pic.dooufo.cn/markdown/20180811002007.png" alt=""></p>
+<h3 id="模板字面量：原始字符串值（raw-value）"><a href="#模板字面量：原始字符串值（raw-value）" class="headerlink" title="模板字面量：原始字符串值（raw value）"></a>模板字面量：原始字符串值（raw value）</h3><p><img src="https://pic.dooufo.cn/markdown/20180811002115.png" alt=""></p>
+<h2 id="Symbol"><a href="#Symbol" class="headerlink" title="Symbol"></a>Symbol</h2><p><img src="https://pic.dooufo.cn/markdown/20180811002321.png" alt=""></p>
+<h3 id="共享Symbol"><a href="#共享Symbol" class="headerlink" title="共享Symbol"></a>共享Symbol</h3><p><img src="https://pic.dooufo.cn/markdown/20180811002435.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180811002453.png" alt=""></p>
+<h3 id="Symbol转其他类型"><a href="#Symbol转其他类型" class="headerlink" title="Symbol转其他类型"></a>Symbol转其他类型</h3><p><img src="https://pic.dooufo.cn/markdown/20180811002538.png" alt=""></p>
+<h3 id="查找对象的Symbol属性"><a href="#查找对象的Symbol属性" class="headerlink" title="查找对象的Symbol属性"></a>查找对象的Symbol属性</h3><p><img src="https://pic.dooufo.cn/markdown/20180811002558.png" alt=""></p>
+<h3 id="es6的内置Symbol"><a href="#es6的内置Symbol" class="headerlink" title="es6的内置Symbol"></a>es6的内置Symbol</h3><p><img src="https://pic.dooufo.cn/markdown/20180811002646.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180811002659.png" alt=""></p>
+<h4 id="Symbol-hasInstance"><a href="#Symbol-hasInstance" class="headerlink" title="Symbol.hasInstance"></a>Symbol.hasInstance</h4><p><img src="https://pic.dooufo.cn/markdown/20180811002813.png" alt=""></p>
+<h4 id="Symbol-isConcatSpreadable"><a href="#Symbol-isConcatSpreadable" class="headerlink" title="Symbol.isConcatSpreadable"></a>Symbol.isConcatSpreadable</h4><p><img src="https://pic.dooufo.cn/markdown/20180811002836.png" alt=""></p>
+<p><img src="https://pic.dooufo.cn/markdown/20180811003148.png" alt=""></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/进阶篇/" rel="tag"># 进阶篇</a>
+          
+            <a href="/tags/数据类型的区别/" rel="tag"># 数据类型的区别</a>
+          
+            <a href="/tags/复制变量的值/" rel="tag"># 复制变量的值</a>
+          
+            <a href="/tags/类型转换/" rel="tag"># 类型转换</a>
+          
+            <a href="/tags/类型识别/" rel="tag"># 类型识别</a>
+          
+            <a href="/tags/Symbol/" rel="tag"># Symbol</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/09/web/js/Error/" rel="next" title="Error">
+                <i class="fa fa-chevron-left"></i> Error
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/14/web/js/【进阶篇】变量作用域/" rel="prev" title="【进阶篇】变量作用域">
+                【进阶篇】变量作用域 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://pic.dooufo.cn/markdown/20181111031652.png" alt="Yin Han">
+            
+              <p class="site-author-name" itemprop="name">Yin Han</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">47</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">165</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/xiaohantx" title="GitHub &rarr; https://github.com/xiaohantx" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:xiaohan.web@gmail.com" title="E-Mail &rarr; mailto:xiaohan.web@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.v2ex.com/member/xiaohantx" title="V2ex &rarr; https://www.v2ex.com/member/xiaohantx" rel="noopener" target="_blank"><i class="fa fa-fw fa-grav"></i>V2ex</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="/resume" title="Job &rarr; resume"><i class="fa fa-fw fa-linkedin"></i>Job</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#原始类型和对象的区别"><span class="nav-number">1.</span> <span class="nav-text">原始类型和对象的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript的数据类型"><span class="nav-number">1.1.</span> <span class="nav-text">JavaScript的数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原始类型"><span class="nav-number">1.2.</span> <span class="nav-text">原始类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原始类型：相等比较"><span class="nav-number">1.3.</span> <span class="nav-text">原始类型：相等比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象类型"><span class="nav-number">1.4.</span> <span class="nav-text">对象类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象类型：相等比较"><span class="nav-number">1.5.</span> <span class="nav-text">对象类型：相等比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象类型：另一个名字"><span class="nav-number">1.6.</span> <span class="nav-text">对象类型：另一个名字</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复制变量的值"><span class="nav-number">2.</span> <span class="nav-text">复制变量的值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#复制变量的值-1"><span class="nav-number">2.1.</span> <span class="nav-text">复制变量的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制原始类型的值"><span class="nav-number">2.2.</span> <span class="nav-text">复制原始类型的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制对象类型的值"><span class="nav-number">2.3.</span> <span class="nav-text">复制对象类型的值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类型转换"><span class="nav-number">3.</span> <span class="nav-text">类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#类型转换场景"><span class="nav-number">3.1.</span> <span class="nav-text">类型转换场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类型转换场景：相等性（-）"><span class="nav-number">3.2.</span> <span class="nav-text">类型转换场景：相等性（==）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类型转换-1"><span class="nav-number">3.3.</span> <span class="nav-text">类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示类型转换"><span class="nav-number">3.4.</span> <span class="nav-text">显示类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示类型转换：转字符串"><span class="nav-number">3.5.</span> <span class="nav-text">显示类型转换：转字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示类型转换：转数值"><span class="nav-number">3.6.</span> <span class="nav-text">显示类型转换：转数值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象类型转字符串"><span class="nav-number">3.7.</span> <span class="nav-text">对象类型转字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象类型转数值"><span class="nav-number">3.8.</span> <span class="nav-text">对象类型转数值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类型识别"><span class="nav-number">4.</span> <span class="nav-text">类型识别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#类型识别-1"><span class="nav-number">4.1.</span> <span class="nav-text">类型识别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#typeof的局限性"><span class="nav-number">4.2.</span> <span class="nav-text">typeof的局限性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#obj-instanceof-constructor"><span class="nav-number">4.3.</span> <span class="nav-text">obj instanceof constructor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#constructor-NaN"><span class="nav-number">4.4.</span> <span class="nav-text">constructor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#constructor-在某些场景下失效"><span class="nav-number">4.5.</span> <span class="nav-text">constructor 在某些场景下失效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#instanceof-和-constructor-不可跨frame"><span class="nav-number">4.6.</span> <span class="nav-text">instanceof 和 constructor 不可跨frame</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#duck-typing"><span class="nav-number">4.7.</span> <span class="nav-text">duck-typing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-prototype-toString-call-obj"><span class="nav-number">4.8.</span> <span class="nav-text">Object.prototype.toString.call(obj)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类型识别总结"><span class="nav-number">4.9.</span> <span class="nav-text">类型识别总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检测数组的原生方法：Array-isArray"><span class="nav-number">4.10.</span> <span class="nav-text">检测数组的原生方法：Array.isArray()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DOM元素和宿主对象的检测"><span class="nav-number">4.11.</span> <span class="nav-text">DOM元素和宿主对象的检测</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模板字面量"><span class="nav-number">5.</span> <span class="nav-text">模板字面量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#模板字面量：支持嵌套"><span class="nav-number">5.1.</span> <span class="nav-text">模板字面量：支持嵌套</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板字面量：tagged-template"><span class="nav-number">5.2.</span> <span class="nav-text">模板字面量：tagged template</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#模板字面量：tagged-template-示例"><span class="nav-number">5.2.1.</span> <span class="nav-text">模板字面量：tagged template 示例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板字面量：原始字符串值（raw-value）"><span class="nav-number">5.3.</span> <span class="nav-text">模板字面量：原始字符串值（raw value）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Symbol"><span class="nav-number">6.</span> <span class="nav-text">Symbol</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#共享Symbol"><span class="nav-number">6.1.</span> <span class="nav-text">共享Symbol</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Symbol转其他类型"><span class="nav-number">6.2.</span> <span class="nav-text">Symbol转其他类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找对象的Symbol属性"><span class="nav-number">6.3.</span> <span class="nav-text">查找对象的Symbol属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#es6的内置Symbol"><span class="nav-number">6.4.</span> <span class="nav-text">es6的内置Symbol</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Symbol-hasInstance"><span class="nav-number">6.4.1.</span> <span class="nav-text">Symbol.hasInstance</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Symbol-isConcatSpreadable"><span class="nav-number">6.4.2.</span> <span class="nav-text">Symbol.isConcatSpreadable</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yin Han</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v6.5.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.5.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'wU3im0km3KK4VAPn4w5FDaoM-gzGzoHsz',
+        appKey: 'BhOINPyO8aE4b30xcpMChgs5',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: true
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+</body>
+</html>
