@@ -401,9 +401,9 @@
         <category>css</category>
       </categories>
       <tags>
-        <tag>border</tag>
         <tag>overflow</tag>
         <tag>box</tag>
+        <tag>border</tag>
       </tags>
   </entry>
   <entry>
@@ -473,10 +473,10 @@
         <category>css</category>
       </categories>
       <tags>
+        <tag>border</tag>
         <tag>盒模型</tag>
         <tag>margin</tag>
         <tag>padding</tag>
-        <tag>border</tag>
       </tags>
   </entry>
   <entry>
@@ -494,6 +494,22 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[文本元素]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E6%96%87%E6%9C%AC%E5%85%83%E7%B4%A0%2F</url>
+    <content type="text"><![CDATA[文本内容p pre blockquote 文本语义em strong span br 其他]]></content>
+      <categories>
+        <category>web</category>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>p</tag>
+        <tag>pre</tag>
+        <tag>blockquote</tag>
+        <tag>em</tag>
+        <tag>文本语义</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[表单元素]]></title>
     <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E8%A1%A8%E5%8D%95%E5%85%83%E7%B4%A0%2F</url>
     <content type="text"><![CDATA[表单使用使用过程 构建表单 服务器处理接口 配置表单 验证表单 表单控件 form label select 选项分组 禁用状态 datalist option textarea progress meter 展示效果 fieldset 分组表单控件 button 输入控件 input text search tel url email number password checkbox radio file range color date month week time datetime-local reset/submit/button 兼容性https://caniuse.com/]]></content>
@@ -504,47 +520,6 @@
       <tags>
         <tag>表单</tag>
         <tag>服务器接口</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[超链接]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E8%B6%85%E9%93%BE%E6%8E%A5%2F</url>
-    <content type="text"><![CDATA[超链接元素超链接 超链接-download]]></content>
-      <categories>
-        <category>web</category>
-        <category>html</category>
-      </categories>
-      <tags>
-        <tag>超链接</tag>
-        <tag>超链接-download</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[表格元素]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E8%A1%A8%E6%A0%BC%E5%85%83%E7%B4%A0%2F</url>
-    <content type="text"><![CDATA[表格元素table caption colgroup col tbody thead tfoot 顺序 会按顺序输出，即使写错 tr td td-colspan th th-rowspan th-scope]]></content>
-      <categories>
-        <category>web</category>
-        <category>html</category>
-      </categories>
-      <tags>
-        <tag>表格</tag>
-        <tag>table</tag>
-        <tag>表格元素</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[语法]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E8%AF%AD%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[语法语法-结构 没有结束标签 除了img还有以下没有结束标签 input meta link area hr br col base embed param source track wbr 语法-属性 checked readonly required selected 语法-嵌套 语法-注释 全局属性 id &lt;div id=&quot;nav&quot;&gt;&lt;/div&gt; class &lt;div class=&quot;time&quot;&gt;&lt;/div&gt; style &lt;div style=&quot;display:none&quot;&gt;&lt;/div&gt; title &lt;div title=&quot;收藏&quot;&gt;&lt;/div&gt; 实体字符实体字符表示]]></content>
-      <categories>
-        <category>web</category>
-        <category>html</category>
-      </categories>
-      <tags>
-        <tag>语法</tag>
-        <tag>实体字符</tag>
-        <tag>全局属性</tag>
       </tags>
   </entry>
   <entry>
@@ -577,35 +552,16 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[元素分类]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E5%85%83%E7%B4%A0%E5%88%86%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[元素分类 根元素 html 文档元数据 head title base link meta style 内容分区 body article section nav aside h1-h6 header footer 分组内容 p address hr pre blockquote main div ol ul li dl dt dd figure figcaption 文本级语义 a span em strong cite q br i b u code small s sub,sup 嵌入内容 picture source img iframe embed object param video audio track map area template canvas 表格 table caption colgroup col tbody thead tfoot tr td th 表单 form label input button select datalist optgroup option textarea output progress meter fieldset legend 脚本 script noscript 交互 details summary dialog 编辑 ins del]]></content>
+    <title><![CDATA[超链接]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E8%B6%85%E9%93%BE%E6%8E%A5%2F</url>
+    <content type="text"><![CDATA[超链接元素超链接 超链接-download]]></content>
       <categories>
         <category>web</category>
         <category>html</category>
       </categories>
       <tags>
-        <tag>元素分类</tag>
-        <tag>表单</tag>
-        <tag>内容分区</tag>
-        <tag>分组内容</tag>
-        <tag>表格</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[文本元素]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E6%96%87%E6%9C%AC%E5%85%83%E7%B4%A0%2F</url>
-    <content type="text"><![CDATA[文本内容p pre blockquote 文本语义em strong span br 其他]]></content>
-      <categories>
-        <category>web</category>
-        <category>html</category>
-      </categories>
-      <tags>
-        <tag>p</tag>
-        <tag>pre</tag>
-        <tag>blockquote</tag>
-        <tag>em</tag>
-        <tag>文本语义</tag>
+        <tag>超链接</tag>
+        <tag>超链接-download</tag>
       </tags>
   </entry>
   <entry>
@@ -623,16 +579,47 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[插入样式]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E6%8F%92%E5%85%A5%E6%A0%B7%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[插入方式 外联样式表]]></content>
+    <title><![CDATA[语法]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[语法语法-结构 没有结束标签 除了img还有以下没有结束标签 input meta link area hr br col base embed param source track wbr 语法-属性 checked readonly required selected 语法-嵌套 语法-注释 全局属性 id &lt;div id=&quot;nav&quot;&gt;&lt;/div&gt; class &lt;div class=&quot;time&quot;&gt;&lt;/div&gt; style &lt;div style=&quot;display:none&quot;&gt;&lt;/div&gt; title &lt;div title=&quot;收藏&quot;&gt;&lt;/div&gt; 实体字符实体字符表示]]></content>
       <categories>
         <category>web</category>
         <category>html</category>
       </categories>
       <tags>
-        <tag>插入方式</tag>
-        <tag>外联样式表</tag>
+        <tag>语法</tag>
+        <tag>实体字符</tag>
+        <tag>全局属性</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[表格元素]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E8%A1%A8%E6%A0%BC%E5%85%83%E7%B4%A0%2F</url>
+    <content type="text"><![CDATA[表格元素table caption colgroup col tbody thead tfoot 顺序 会按顺序输出，即使写错 tr td td-colspan th th-rowspan th-scope]]></content>
+      <categories>
+        <category>web</category>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>表格</tag>
+        <tag>table</tag>
+        <tag>表格元素</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[嵌入内容]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E5%B5%8C%E5%85%A5%E5%86%85%E5%AE%B9%2F</url>
+    <content type="text"><![CDATA[插入图片img 图片热点 视频音频video poster 封面 字幕 audio 插入广告iframe]]></content>
+      <categories>
+        <category>web</category>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>img</tag>
+        <tag>图片热点</tag>
+        <tag>video</tag>
+        <tag>audio</tag>
+        <tag>iframe</tag>
       </tags>
   </entry>
   <entry>
@@ -670,19 +657,32 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[嵌入内容]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E5%B5%8C%E5%85%A5%E5%86%85%E5%AE%B9%2F</url>
-    <content type="text"><![CDATA[插入图片img 图片热点 视频音频video poster 封面 字幕 audio 插入广告iframe]]></content>
+    <title><![CDATA[元素分类]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E5%85%83%E7%B4%A0%E5%88%86%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[元素分类 根元素 html 文档元数据 head title base link meta style 内容分区 body article section nav aside h1-h6 header footer 分组内容 p address hr pre blockquote main div ol ul li dl dt dd figure figcaption 文本级语义 a span em strong cite q br i b u code small s sub,sup 嵌入内容 picture source img iframe embed object param video audio track map area template canvas 表格 table caption colgroup col tbody thead tfoot tr td th 表单 form label input button select datalist optgroup option textarea output progress meter fieldset legend 脚本 script noscript 交互 details summary dialog 编辑 ins del]]></content>
       <categories>
         <category>web</category>
         <category>html</category>
       </categories>
       <tags>
-        <tag>img</tag>
-        <tag>图片热点</tag>
-        <tag>video</tag>
-        <tag>audio</tag>
-        <tag>iframe</tag>
+        <tag>元素分类</tag>
+        <tag>表单</tag>
+        <tag>内容分区</tag>
+        <tag>分组内容</tag>
+        <tag>表格</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[插入样式]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E6%8F%92%E5%85%A5%E6%A0%B7%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[插入方式 外联样式表]]></content>
+      <categories>
+        <category>web</category>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>插入方式</tag>
+        <tag>外联样式表</tag>
       </tags>
   </entry>
 </search>
