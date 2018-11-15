@@ -40,9 +40,9 @@
       <category term="css" scheme="http://yoursite.com/categories/web/css/"/>
     
     
-      <category term="布局" scheme="http://yoursite.com/tags/%E5%B8%83%E5%B1%80/"/>
-    
       <category term="flex" scheme="http://yoursite.com/tags/flex/"/>
+    
+      <category term="布局" scheme="http://yoursite.com/tags/%E5%B8%83%E5%B1%80/"/>
     
   </entry>
   
