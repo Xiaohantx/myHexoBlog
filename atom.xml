@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-15T07:03:45.106Z</updated>
+  <updated>2018-11-12T03:28:00.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2018/11/15/%E5%A4%A7%E5%9B%BE%E6%B5%8B%E8%AF%95/"/>
-    <id>http://yoursite.com/2018/11/15/大图测试/</id>
-    <published>2018-11-15T07:03:35.539Z</published>
-    <updated>2018-11-15T07:03:45.106Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;https://pic.dooufo.cn/loading-animations-preloader-gifs-ui-ux-effects-11.gif&quot;
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>CSS布局 flex篇</title>
@@ -62,9 +40,9 @@
       <category term="css" scheme="http://yoursite.com/categories/web/css/"/>
     
     
-      <category term="flex" scheme="http://yoursite.com/tags/flex/"/>
-    
       <category term="布局" scheme="http://yoursite.com/tags/%E5%B8%83%E5%B1%80/"/>
+    
+      <category term="flex" scheme="http://yoursite.com/tags/flex/"/>
     
   </entry>
   
@@ -637,11 +615,11 @@
       <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
     
     
-      <category term="字符串类型" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
-    
       <category term="类型识别" scheme="http://yoursite.com/tags/%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB/"/>
     
       <category term="数据类型" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    
+      <category term="字符串类型" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
     
       <category term="布尔类型" scheme="http://yoursite.com/tags/%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B/"/>
     
@@ -714,6 +692,38 @@
       <category term="字体图标" scheme="http://yoursite.com/tags/%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87/"/>
     
       <category term="font-face" scheme="http://yoursite.com/tags/font-face/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>动画</title>
+    <link href="http://yoursite.com/2018/06/21/web/css/%E5%8A%A8%E7%94%BB/"/>
+    <id>http://yoursite.com/2018/06/21/web/css/动画/</id>
+    <published>2018-06-21T15:18:08.000Z</published>
+    <updated>2018-11-12T03:28:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;transition-property&quot;&gt;&lt;a href=&quot;#transition-property&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+    
+      <category term="css" scheme="http://yoursite.com/categories/web/css/"/>
+    
+    
+      <category term="transition" scheme="http://yoursite.com/tags/transition/"/>
+    
+      <category term="animation" scheme="http://yoursite.com/tags/animation/"/>
+    
+      <category term="keyframes" scheme="http://yoursite.com/tags/keyframes/"/>
     
   </entry>
   
