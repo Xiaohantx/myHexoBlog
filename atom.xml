@@ -5,9 +5,9 @@
   <subtitle>分享发现与探索</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://www.gitgit.io/"/>
   <updated>2018-11-12T03:28:00.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://www.gitgit.io/</id>
   
   <author>
     <name>Yin Han</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>CSS布局 flex篇</title>
-    <link href="http://yoursite.com/2018/11/12/web/css/CSS%E5%B8%83%E5%B1%80%20flex%E7%AF%87/"/>
-    <id>http://yoursite.com/2018/11/12/web/css/CSS布局 flex篇/</id>
+    <link href="https://www.gitgit.io/2018/11/12/web/css/CSS%E5%B8%83%E5%B1%80%20flex%E7%AF%87/"/>
+    <id>https://www.gitgit.io/2018/11/12/web/css/CSS布局 flex篇/</id>
     <published>2018-11-12T03:28:00.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -35,21 +35,21 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="css" scheme="http://yoursite.com/categories/web/css/"/>
+      <category term="css" scheme="https://www.gitgit.io/categories/web/css/"/>
     
     
-      <category term="布局" scheme="http://yoursite.com/tags/%E5%B8%83%E5%B1%80/"/>
+      <category term="flex" scheme="https://www.gitgit.io/tags/flex/"/>
     
-      <category term="flex" scheme="http://yoursite.com/tags/flex/"/>
+      <category term="布局" scheme="https://www.gitgit.io/tags/%E5%B8%83%E5%B1%80/"/>
     
   </entry>
   
   <entry>
     <title>【进阶篇】函数进阶</title>
-    <link href="http://yoursite.com/2018/08/17/web/js/%E3%80%90%E8%BF%9B%E9%98%B6%E7%AF%87%E3%80%91%E5%87%BD%E6%95%B0%E8%BF%9B%E9%98%B6/"/>
-    <id>http://yoursite.com/2018/08/17/web/js/【进阶篇】函数进阶/</id>
+    <link href="https://www.gitgit.io/2018/08/17/web/js/%E3%80%90%E8%BF%9B%E9%98%B6%E7%AF%87%E3%80%91%E5%87%BD%E6%95%B0%E8%BF%9B%E9%98%B6/"/>
+    <id>https://www.gitgit.io/2018/08/17/web/js/【进阶篇】函数进阶/</id>
     <published>2018-08-16T16:44:42.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -65,29 +65,29 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="进阶篇" scheme="http://yoursite.com/tags/%E8%BF%9B%E9%98%B6%E7%AF%87/"/>
+      <category term="进阶篇" scheme="https://www.gitgit.io/tags/%E8%BF%9B%E9%98%B6%E7%AF%87/"/>
     
-      <category term="this对象" scheme="http://yoursite.com/tags/this%E5%AF%B9%E8%B1%A1/"/>
+      <category term="this对象" scheme="https://www.gitgit.io/tags/this%E5%AF%B9%E8%B1%A1/"/>
     
-      <category term="函数的双重职能" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%8C%E9%87%8D%E8%81%8C%E8%83%BD/"/>
+      <category term="函数的双重职能" scheme="https://www.gitgit.io/tags/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%8C%E9%87%8D%E8%81%8C%E8%83%BD/"/>
     
-      <category term="函数参数的传递方式" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E7%9A%84%E4%BC%A0%E9%80%92%E6%96%B9%E5%BC%8F/"/>
+      <category term="函数参数的传递方式" scheme="https://www.gitgit.io/tags/%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E7%9A%84%E4%BC%A0%E9%80%92%E6%96%B9%E5%BC%8F/"/>
     
-      <category term="函数应用" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8/"/>
+      <category term="函数应用" scheme="https://www.gitgit.io/tags/%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8/"/>
     
-      <category term="箭头函数、尾调用" scheme="http://yoursite.com/tags/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E3%80%81%E5%B0%BE%E8%B0%83%E7%94%A8/"/>
+      <category term="箭头函数、尾调用" scheme="https://www.gitgit.io/tags/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E3%80%81%E5%B0%BE%E8%B0%83%E7%94%A8/"/>
     
   </entry>
   
   <entry>
     <title>【进阶篇】原型</title>
-    <link href="http://yoursite.com/2018/08/15/web/js/%E3%80%90%E8%BF%9B%E9%98%B6%E7%AF%87%E3%80%91%E5%8E%9F%E5%9E%8B/"/>
-    <id>http://yoursite.com/2018/08/15/web/js/【进阶篇】原型/</id>
+    <link href="https://www.gitgit.io/2018/08/15/web/js/%E3%80%90%E8%BF%9B%E9%98%B6%E7%AF%87%E3%80%91%E5%8E%9F%E5%9E%8B/"/>
+    <id>https://www.gitgit.io/2018/08/15/web/js/【进阶篇】原型/</id>
     <published>2018-08-15T15:45:21.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -103,27 +103,27 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="进阶篇" scheme="http://yoursite.com/tags/%E8%BF%9B%E9%98%B6%E7%AF%87/"/>
+      <category term="进阶篇" scheme="https://www.gitgit.io/tags/%E8%BF%9B%E9%98%B6%E7%AF%87/"/>
     
-      <category term="原型" scheme="http://yoursite.com/tags/%E5%8E%9F%E5%9E%8B/"/>
+      <category term="原型" scheme="https://www.gitgit.io/tags/%E5%8E%9F%E5%9E%8B/"/>
     
-      <category term="原型链" scheme="http://yoursite.com/tags/%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
+      <category term="原型链" scheme="https://www.gitgit.io/tags/%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
     
-      <category term="操作对象属性" scheme="http://yoursite.com/tags/%E6%93%8D%E4%BD%9C%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7/"/>
+      <category term="操作对象属性" scheme="https://www.gitgit.io/tags/%E6%93%8D%E4%BD%9C%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7/"/>
     
-      <category term="实践中的原型" scheme="http://yoursite.com/tags/%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%9E%8B/"/>
+      <category term="实践中的原型" scheme="https://www.gitgit.io/tags/%E5%AE%9E%E8%B7%B5%E4%B8%AD%E7%9A%84%E5%8E%9F%E5%9E%8B/"/>
     
   </entry>
   
   <entry>
     <title>【进阶篇】变量作用域</title>
-    <link href="http://yoursite.com/2018/08/14/web/js/%E3%80%90%E8%BF%9B%E9%98%B6%E7%AF%87%E3%80%91%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
-    <id>http://yoursite.com/2018/08/14/web/js/【进阶篇】变量作用域/</id>
+    <link href="https://www.gitgit.io/2018/08/14/web/js/%E3%80%90%E8%BF%9B%E9%98%B6%E7%AF%87%E3%80%91%E5%8F%98%E9%87%8F%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+    <id>https://www.gitgit.io/2018/08/14/web/js/【进阶篇】变量作用域/</id>
     <published>2018-08-13T16:29:47.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -139,29 +139,29 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="进阶篇" scheme="http://yoursite.com/tags/%E8%BF%9B%E9%98%B6%E7%AF%87/"/>
+      <category term="进阶篇" scheme="https://www.gitgit.io/tags/%E8%BF%9B%E9%98%B6%E7%AF%87/"/>
     
-      <category term="作用域简介" scheme="http://yoursite.com/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%AE%80%E4%BB%8B/"/>
+      <category term="作用域简介" scheme="https://www.gitgit.io/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F%E7%AE%80%E4%BB%8B/"/>
     
-      <category term="声明提前" scheme="http://yoursite.com/tags/%E5%A3%B0%E6%98%8E%E6%8F%90%E5%89%8D/"/>
+      <category term="声明提前" scheme="https://www.gitgit.io/tags/%E5%A3%B0%E6%98%8E%E6%8F%90%E5%89%8D/"/>
     
-      <category term="块级作用域" scheme="http://yoursite.com/tags/%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+      <category term="块级作用域" scheme="https://www.gitgit.io/tags/%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     
-      <category term="作用域链" scheme="http://yoursite.com/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/"/>
+      <category term="作用域链" scheme="https://www.gitgit.io/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/"/>
     
-      <category term="作用域链延长" scheme="http://yoursite.com/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE%E5%BB%B6%E9%95%BF/"/>
+      <category term="作用域链延长" scheme="https://www.gitgit.io/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE%E5%BB%B6%E9%95%BF/"/>
     
   </entry>
   
   <entry>
     <title>【进阶篇】类型进阶</title>
-    <link href="http://yoursite.com/2018/08/11/web/js/%E3%80%90%E8%BF%9B%E9%98%B6%E7%AF%87%E3%80%91%E7%B1%BB%E5%9E%8B%E8%BF%9B%E9%98%B6/"/>
-    <id>http://yoursite.com/2018/08/11/web/js/【进阶篇】类型进阶/</id>
+    <link href="https://www.gitgit.io/2018/08/11/web/js/%E3%80%90%E8%BF%9B%E9%98%B6%E7%AF%87%E3%80%91%E7%B1%BB%E5%9E%8B%E8%BF%9B%E9%98%B6/"/>
+    <id>https://www.gitgit.io/2018/08/11/web/js/【进阶篇】类型进阶/</id>
     <published>2018-08-10T16:33:48.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -177,29 +177,29 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="进阶篇" scheme="http://yoursite.com/tags/%E8%BF%9B%E9%98%B6%E7%AF%87/"/>
+      <category term="进阶篇" scheme="https://www.gitgit.io/tags/%E8%BF%9B%E9%98%B6%E7%AF%87/"/>
     
-      <category term="数据类型的区别" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+      <category term="数据类型的区别" scheme="https://www.gitgit.io/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     
-      <category term="复制变量的值" scheme="http://yoursite.com/tags/%E5%A4%8D%E5%88%B6%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/"/>
+      <category term="复制变量的值" scheme="https://www.gitgit.io/tags/%E5%A4%8D%E5%88%B6%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/"/>
     
-      <category term="类型转换" scheme="http://yoursite.com/tags/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/"/>
+      <category term="类型转换" scheme="https://www.gitgit.io/tags/%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/"/>
     
-      <category term="类型识别" scheme="http://yoursite.com/tags/%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB/"/>
+      <category term="类型识别" scheme="https://www.gitgit.io/tags/%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB/"/>
     
-      <category term="Symbol" scheme="http://yoursite.com/tags/Symbol/"/>
+      <category term="Symbol" scheme="https://www.gitgit.io/tags/Symbol/"/>
     
   </entry>
   
   <entry>
     <title>Error</title>
-    <link href="http://yoursite.com/2018/08/09/web/js/Error/"/>
-    <id>http://yoursite.com/2018/08/09/web/js/Error/</id>
+    <link href="https://www.gitgit.io/2018/08/09/web/js/Error/"/>
+    <id>https://www.gitgit.io/2018/08/09/web/js/Error/</id>
     <published>2018-08-09T14:22:27.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -215,23 +215,23 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="了解Error对象" scheme="http://yoursite.com/tags/%E4%BA%86%E8%A7%A3Error%E5%AF%B9%E8%B1%A1/"/>
+      <category term="了解Error对象" scheme="https://www.gitgit.io/tags/%E4%BA%86%E8%A7%A3Error%E5%AF%B9%E8%B1%A1/"/>
     
-      <category term="学习内建Error类型" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E5%86%85%E5%BB%BAError%E7%B1%BB%E5%9E%8B/"/>
+      <category term="学习内建Error类型" scheme="https://www.gitgit.io/tags/%E5%AD%A6%E4%B9%A0%E5%86%85%E5%BB%BAError%E7%B1%BB%E5%9E%8B/"/>
     
-      <category term="学习自定义Error" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E8%87%AA%E5%AE%9A%E4%B9%89Error/"/>
+      <category term="学习自定义Error" scheme="https://www.gitgit.io/tags/%E5%AD%A6%E4%B9%A0%E8%87%AA%E5%AE%9A%E4%B9%89Error/"/>
     
   </entry>
   
   <entry>
     <title>JSON</title>
-    <link href="http://yoursite.com/2018/08/04/web/js/JSON/"/>
-    <id>http://yoursite.com/2018/08/04/web/js/JSON/</id>
+    <link href="https://www.gitgit.io/2018/08/04/web/js/JSON/"/>
+    <id>https://www.gitgit.io/2018/08/04/web/js/JSON/</id>
     <published>2018-08-04T10:51:49.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -248,23 +248,23 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="JSON" scheme="http://yoursite.com/tags/JSON/"/>
+      <category term="JSON" scheme="https://www.gitgit.io/tags/JSON/"/>
     
-      <category term="parse" scheme="http://yoursite.com/tags/parse/"/>
+      <category term="parse" scheme="https://www.gitgit.io/tags/parse/"/>
     
-      <category term="stringify" scheme="http://yoursite.com/tags/stringify/"/>
+      <category term="stringify" scheme="https://www.gitgit.io/tags/stringify/"/>
     
   </entry>
   
   <entry>
     <title>Date</title>
-    <link href="http://yoursite.com/2018/07/24/web/js/Date/"/>
-    <id>http://yoursite.com/2018/07/24/web/js/Date/</id>
+    <link href="https://www.gitgit.io/2018/07/24/web/js/Date/"/>
+    <id>https://www.gitgit.io/2018/07/24/web/js/Date/</id>
     <published>2018-07-24T13:03:56.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -280,29 +280,29 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="日期" scheme="http://yoursite.com/tags/%E6%97%A5%E6%9C%9F/"/>
+      <category term="日期" scheme="https://www.gitgit.io/tags/%E6%97%A5%E6%9C%9F/"/>
     
-      <category term="Date" scheme="http://yoursite.com/tags/Date/"/>
+      <category term="Date" scheme="https://www.gitgit.io/tags/Date/"/>
     
-      <category term="获取日期" scheme="http://yoursite.com/tags/%E8%8E%B7%E5%8F%96%E6%97%A5%E6%9C%9F/"/>
+      <category term="获取日期" scheme="https://www.gitgit.io/tags/%E8%8E%B7%E5%8F%96%E6%97%A5%E6%9C%9F/"/>
     
-      <category term="设置日期" scheme="http://yoursite.com/tags/%E8%AE%BE%E7%BD%AE%E6%97%A5%E6%9C%9F/"/>
+      <category term="设置日期" scheme="https://www.gitgit.io/tags/%E8%AE%BE%E7%BD%AE%E6%97%A5%E6%9C%9F/"/>
     
-      <category term="日期格式化" scheme="http://yoursite.com/tags/%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
+      <category term="日期格式化" scheme="https://www.gitgit.io/tags/%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
     
-      <category term="日期转换" scheme="http://yoursite.com/tags/%E6%97%A5%E6%9C%9F%E8%BD%AC%E6%8D%A2/"/>
+      <category term="日期转换" scheme="https://www.gitgit.io/tags/%E6%97%A5%E6%9C%9F%E8%BD%AC%E6%8D%A2/"/>
     
   </entry>
   
   <entry>
     <title>数组</title>
-    <link href="http://yoursite.com/2018/07/23/web/js/%E6%95%B0%E7%BB%84/"/>
-    <id>http://yoursite.com/2018/07/23/web/js/数组/</id>
+    <link href="https://www.gitgit.io/2018/07/23/web/js/%E6%95%B0%E7%BB%84/"/>
+    <id>https://www.gitgit.io/2018/07/23/web/js/数组/</id>
     <published>2018-07-23T13:11:23.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -318,25 +318,25 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="数组构造方法" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/"/>
+      <category term="数组构造方法" scheme="https://www.gitgit.io/tags/%E6%95%B0%E7%BB%84%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/"/>
     
-      <category term="数组原型方法" scheme="http://yoursite.com/tags/%E6%95%B0%E7%BB%84%E5%8E%9F%E5%9E%8B%E6%96%B9%E6%B3%95/"/>
+      <category term="数组原型方法" scheme="https://www.gitgit.io/tags/%E6%95%B0%E7%BB%84%E5%8E%9F%E5%9E%8B%E6%96%B9%E6%B3%95/"/>
     
-      <category term="更改原数组方法" scheme="http://yoursite.com/tags/%E6%9B%B4%E6%94%B9%E5%8E%9F%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/"/>
+      <category term="更改原数组方法" scheme="https://www.gitgit.io/tags/%E6%9B%B4%E6%94%B9%E5%8E%9F%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/"/>
     
-      <category term="不更改原数组方法" scheme="http://yoursite.com/tags/%E4%B8%8D%E6%9B%B4%E6%94%B9%E5%8E%9F%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/"/>
+      <category term="不更改原数组方法" scheme="https://www.gitgit.io/tags/%E4%B8%8D%E6%9B%B4%E6%94%B9%E5%8E%9F%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>对象</title>
-    <link href="http://yoursite.com/2018/07/22/web/js/%E5%AF%B9%E8%B1%A1/"/>
-    <id>http://yoursite.com/2018/07/22/web/js/对象/</id>
+    <link href="https://www.gitgit.io/2018/07/22/web/js/%E5%AF%B9%E8%B1%A1/"/>
+    <id>https://www.gitgit.io/2018/07/22/web/js/对象/</id>
     <published>2018-07-22T11:59:28.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -352,23 +352,23 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="属性" scheme="http://yoursite.com/tags/%E5%B1%9E%E6%80%A7/"/>
+      <category term="属性" scheme="https://www.gitgit.io/tags/%E5%B1%9E%E6%80%A7/"/>
     
-      <category term="原型" scheme="http://yoursite.com/tags/%E5%8E%9F%E5%9E%8B/"/>
+      <category term="原型" scheme="https://www.gitgit.io/tags/%E5%8E%9F%E5%9E%8B/"/>
     
-      <category term="对象" scheme="http://yoursite.com/tags/%E5%AF%B9%E8%B1%A1/"/>
+      <category term="对象" scheme="https://www.gitgit.io/tags/%E5%AF%B9%E8%B1%A1/"/>
     
   </entry>
   
   <entry>
     <title>字符串</title>
-    <link href="http://yoursite.com/2018/07/21/web/js/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    <id>http://yoursite.com/2018/07/21/web/js/字符串/</id>
+    <link href="https://www.gitgit.io/2018/07/21/web/js/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>https://www.gitgit.io/2018/07/21/web/js/字符串/</id>
     <published>2018-07-21T08:41:23.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -387,31 +387,31 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="字符串类型" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
+      <category term="字符串类型" scheme="https://www.gitgit.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
     
-      <category term="字符串方法" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/"/>
+      <category term="字符串方法" scheme="https://www.gitgit.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95/"/>
     
-      <category term="字符串位置" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/"/>
+      <category term="字符串位置" scheme="https://www.gitgit.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/"/>
     
-      <category term="获取字符串" scheme="http://yoursite.com/tags/%E8%8E%B7%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+      <category term="获取字符串" scheme="https://www.gitgit.io/tags/%E8%8E%B7%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
-      <category term="字符串匹配" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/"/>
+      <category term="字符串匹配" scheme="https://www.gitgit.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/"/>
     
-      <category term="字符串连接" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5/"/>
+      <category term="字符串连接" scheme="https://www.gitgit.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5/"/>
     
-      <category term="字符串大小写转换" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%A7%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2/"/>
+      <category term="字符串大小写转换" scheme="https://www.gitgit.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%A7%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2/"/>
     
   </entry>
   
   <entry>
     <title>数值</title>
-    <link href="http://yoursite.com/2018/07/19/web/js/%E6%95%B0%E5%80%BC/"/>
-    <id>http://yoursite.com/2018/07/19/web/js/数值/</id>
+    <link href="https://www.gitgit.io/2018/07/19/web/js/%E6%95%B0%E5%80%BC/"/>
+    <id>https://www.gitgit.io/2018/07/19/web/js/数值/</id>
     <published>2018-07-19T13:48:27.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -433,27 +433,27 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="Number" scheme="http://yoursite.com/tags/Number/"/>
+      <category term="Number" scheme="https://www.gitgit.io/tags/Number/"/>
     
-      <category term="Number原型链" scheme="http://yoursite.com/tags/Number%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
+      <category term="Number原型链" scheme="https://www.gitgit.io/tags/Number%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
     
-      <category term="Math" scheme="http://yoursite.com/tags/Math/"/>
+      <category term="Math" scheme="https://www.gitgit.io/tags/Math/"/>
     
-      <category term="Max" scheme="http://yoursite.com/tags/Max/"/>
+      <category term="Max" scheme="https://www.gitgit.io/tags/Max/"/>
     
-      <category term="Min" scheme="http://yoursite.com/tags/Min/"/>
+      <category term="Min" scheme="https://www.gitgit.io/tags/Min/"/>
     
   </entry>
   
   <entry>
     <title>windows效率工具</title>
-    <link href="http://yoursite.com/2018/07/18/share/20180718/windows%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/"/>
-    <id>http://yoursite.com/2018/07/18/share/20180718/windows效率工具/</id>
+    <link href="https://www.gitgit.io/2018/07/18/share/20180718/windows%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/"/>
+    <id>https://www.gitgit.io/2018/07/18/share/20180718/windows效率工具/</id>
     <published>2018-07-18T15:07:36.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -470,23 +470,23 @@
     
     </summary>
     
-      <category term="分享" scheme="http://yoursite.com/categories/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://www.gitgit.io/categories/%E5%88%86%E4%BA%AB/"/>
     
-      <category term="杂七杂八" scheme="http://yoursite.com/categories/%E5%88%86%E4%BA%AB/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/"/>
+      <category term="杂七杂八" scheme="https://www.gitgit.io/categories/%E5%88%86%E4%BA%AB/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/"/>
     
     
-      <category term="数值符号" scheme="http://yoursite.com/tags/%E6%95%B0%E5%80%BC%E7%AC%A6%E5%8F%B7/"/>
+      <category term="数值符号" scheme="https://www.gitgit.io/tags/%E6%95%B0%E5%80%BC%E7%AC%A6%E5%8F%B7/"/>
     
-      <category term="css语法" scheme="http://yoursite.com/tags/css%E8%AF%AD%E6%B3%95/"/>
+      <category term="css语法" scheme="https://www.gitgit.io/tags/css%E8%AF%AD%E6%B3%95/"/>
     
-      <category term="属性" scheme="http://yoursite.com/tags/%E5%B1%9E%E6%80%A7/"/>
+      <category term="属性" scheme="https://www.gitgit.io/tags/%E5%B1%9E%E6%80%A7/"/>
     
   </entry>
   
   <entry>
     <title>函数</title>
-    <link href="http://yoursite.com/2018/07/18/web/js/%E5%87%BD%E6%95%B0/"/>
-    <id>http://yoursite.com/2018/07/18/web/js/函数/</id>
+    <link href="https://www.gitgit.io/2018/07/18/web/js/%E5%87%BD%E6%95%B0/"/>
+    <id>https://www.gitgit.io/2018/07/18/web/js/函数/</id>
     <published>2018-07-18T14:14:36.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -502,31 +502,31 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="原型" scheme="http://yoursite.com/tags/%E5%8E%9F%E5%9E%8B/"/>
+      <category term="原型" scheme="https://www.gitgit.io/tags/%E5%8E%9F%E5%9E%8B/"/>
     
-      <category term="函数" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0/"/>
+      <category term="函数" scheme="https://www.gitgit.io/tags/%E5%87%BD%E6%95%B0/"/>
     
-      <category term="bind" scheme="http://yoursite.com/tags/bind/"/>
+      <category term="bind" scheme="https://www.gitgit.io/tags/bind/"/>
     
-      <category term="call" scheme="http://yoursite.com/tags/call/"/>
+      <category term="call" scheme="https://www.gitgit.io/tags/call/"/>
     
-      <category term="apply" scheme="http://yoursite.com/tags/apply/"/>
+      <category term="apply" scheme="https://www.gitgit.io/tags/apply/"/>
     
-      <category term="作用域" scheme="http://yoursite.com/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+      <category term="作用域" scheme="https://www.gitgit.io/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     
-      <category term="箭头函数" scheme="http://yoursite.com/tags/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/"/>
+      <category term="箭头函数" scheme="https://www.gitgit.io/tags/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
   <entry>
     <title>条件语句</title>
-    <link href="http://yoursite.com/2018/07/18/web/js/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
-    <id>http://yoursite.com/2018/07/18/web/js/条件语句/</id>
+    <link href="https://www.gitgit.io/2018/07/18/web/js/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
+    <id>https://www.gitgit.io/2018/07/18/web/js/条件语句/</id>
     <published>2018-07-18T12:56:59.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -542,27 +542,27 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="条件语句" scheme="http://yoursite.com/tags/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
+      <category term="条件语句" scheme="https://www.gitgit.io/tags/%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
     
-      <category term="循环语句" scheme="http://yoursite.com/tags/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/"/>
+      <category term="循环语句" scheme="https://www.gitgit.io/tags/%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/"/>
     
-      <category term="控制语句" scheme="http://yoursite.com/tags/%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/"/>
+      <category term="控制语句" scheme="https://www.gitgit.io/tags/%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/"/>
     
-      <category term="异常捕获" scheme="http://yoursite.com/tags/%E5%BC%82%E5%B8%B8%E6%8D%95%E8%8E%B7/"/>
+      <category term="异常捕获" scheme="https://www.gitgit.io/tags/%E5%BC%82%E5%B8%B8%E6%8D%95%E8%8E%B7/"/>
     
-      <category term="with语句" scheme="http://yoursite.com/tags/with%E8%AF%AD%E5%8F%A5/"/>
+      <category term="with语句" scheme="https://www.gitgit.io/tags/with%E8%AF%AD%E5%8F%A5/"/>
     
   </entry>
   
   <entry>
     <title>操作符和表达式</title>
-    <link href="http://yoursite.com/2018/07/02/web/js/%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%92%8C%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    <id>http://yoursite.com/2018/07/02/web/js/操作符和表达式/</id>
+    <link href="https://www.gitgit.io/2018/07/02/web/js/%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%92%8C%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>https://www.gitgit.io/2018/07/02/web/js/操作符和表达式/</id>
     <published>2018-07-02T10:24:20.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -578,23 +578,23 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="表达式" scheme="http://yoursite.com/tags/%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+      <category term="表达式" scheme="https://www.gitgit.io/tags/%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
-      <category term="运算符" scheme="http://yoursite.com/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+      <category term="运算符" scheme="https://www.gitgit.io/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
     
-      <category term="操作符" scheme="http://yoursite.com/tags/%E6%93%8D%E4%BD%9C%E7%AC%A6/"/>
+      <category term="操作符" scheme="https://www.gitgit.io/tags/%E6%93%8D%E4%BD%9C%E7%AC%A6/"/>
     
   </entry>
   
   <entry>
     <title>数据类型</title>
-    <link href="http://yoursite.com/2018/07/01/web/js/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <id>http://yoursite.com/2018/07/01/web/js/数据类型/</id>
+    <link href="https://www.gitgit.io/2018/07/01/web/js/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://www.gitgit.io/2018/07/01/web/js/数据类型/</id>
     <published>2018-07-01T10:20:20.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -610,31 +610,31 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="类型识别" scheme="http://yoursite.com/tags/%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB/"/>
+      <category term="类型识别" scheme="https://www.gitgit.io/tags/%E7%B1%BB%E5%9E%8B%E8%AF%86%E5%88%AB/"/>
     
-      <category term="数据类型" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+      <category term="字符串类型" scheme="https://www.gitgit.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
     
-      <category term="字符串类型" scheme="http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B/"/>
+      <category term="数据类型" scheme="https://www.gitgit.io/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
     
-      <category term="布尔类型" scheme="http://yoursite.com/tags/%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B/"/>
+      <category term="布尔类型" scheme="https://www.gitgit.io/tags/%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B/"/>
     
-      <category term="Symbol类型" scheme="http://yoursite.com/tags/Symbol%E7%B1%BB%E5%9E%8B/"/>
+      <category term="Symbol类型" scheme="https://www.gitgit.io/tags/Symbol%E7%B1%BB%E5%9E%8B/"/>
     
-      <category term="数值类型" scheme="http://yoursite.com/tags/%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B/"/>
+      <category term="数值类型" scheme="https://www.gitgit.io/tags/%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B/"/>
     
-      <category term="NULL类型" scheme="http://yoursite.com/tags/NULL%E7%B1%BB%E5%9E%8B/"/>
+      <category term="NULL类型" scheme="https://www.gitgit.io/tags/NULL%E7%B1%BB%E5%9E%8B/"/>
     
   </entry>
   
   <entry>
     <title>基本语法</title>
-    <link href="http://yoursite.com/2018/07/01/web/js/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>http://yoursite.com/2018/07/01/web/js/基本语法/</id>
+    <link href="https://www.gitgit.io/2018/07/01/web/js/%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>https://www.gitgit.io/2018/07/01/web/js/基本语法/</id>
     <published>2018-07-01T04:22:35.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -650,25 +650,25 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="js" scheme="http://yoursite.com/categories/web/js/"/>
+      <category term="js" scheme="https://www.gitgit.io/categories/web/js/"/>
     
     
-      <category term="标识符" scheme="http://yoursite.com/tags/%E6%A0%87%E8%AF%86%E7%AC%A6/"/>
+      <category term="标识符" scheme="https://www.gitgit.io/tags/%E6%A0%87%E8%AF%86%E7%AC%A6/"/>
     
-      <category term="直接量" scheme="http://yoursite.com/tags/%E7%9B%B4%E6%8E%A5%E9%87%8F/"/>
+      <category term="直接量" scheme="https://www.gitgit.io/tags/%E7%9B%B4%E6%8E%A5%E9%87%8F/"/>
     
-      <category term="变量" scheme="http://yoursite.com/tags/%E5%8F%98%E9%87%8F/"/>
+      <category term="变量" scheme="https://www.gitgit.io/tags/%E5%8F%98%E9%87%8F/"/>
     
-      <category term="严格模式" scheme="http://yoursite.com/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
+      <category term="严格模式" scheme="https://www.gitgit.io/tags/%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>字体图标</title>
-    <link href="http://yoursite.com/2018/06/21/web/css/%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87/"/>
-    <id>http://yoursite.com/2018/06/21/web/css/字体图标/</id>
+    <link href="https://www.gitgit.io/2018/06/21/web/css/%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87/"/>
+    <id>https://www.gitgit.io/2018/06/21/web/css/字体图标/</id>
     <published>2018-06-21T15:18:51.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -684,21 +684,21 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="css" scheme="http://yoursite.com/categories/web/css/"/>
+      <category term="css" scheme="https://www.gitgit.io/categories/web/css/"/>
     
     
-      <category term="字体图标" scheme="http://yoursite.com/tags/%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87/"/>
+      <category term="字体图标" scheme="https://www.gitgit.io/tags/%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87/"/>
     
-      <category term="font-face" scheme="http://yoursite.com/tags/font-face/"/>
+      <category term="font-face" scheme="https://www.gitgit.io/tags/font-face/"/>
     
   </entry>
   
   <entry>
     <title>动画</title>
-    <link href="http://yoursite.com/2018/06/21/web/css/%E5%8A%A8%E7%94%BB/"/>
-    <id>http://yoursite.com/2018/06/21/web/css/动画/</id>
+    <link href="https://www.gitgit.io/2018/06/21/web/css/%E5%8A%A8%E7%94%BB/"/>
+    <id>https://www.gitgit.io/2018/06/21/web/css/动画/</id>
     <published>2018-06-21T15:18:08.000Z</published>
     <updated>2018-11-12T03:28:00.000Z</updated>
     
@@ -714,16 +714,16 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="web" scheme="https://www.gitgit.io/categories/web/"/>
     
-      <category term="css" scheme="http://yoursite.com/categories/web/css/"/>
+      <category term="css" scheme="https://www.gitgit.io/categories/web/css/"/>
     
     
-      <category term="transition" scheme="http://yoursite.com/tags/transition/"/>
+      <category term="transition" scheme="https://www.gitgit.io/tags/transition/"/>
     
-      <category term="animation" scheme="http://yoursite.com/tags/animation/"/>
+      <category term="animation" scheme="https://www.gitgit.io/tags/animation/"/>
     
-      <category term="keyframes" scheme="http://yoursite.com/tags/keyframes/"/>
+      <category term="keyframes" scheme="https://www.gitgit.io/tags/keyframes/"/>
     
   </entry>
   
