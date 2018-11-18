@@ -9,8 +9,8 @@
         <category>css</category>
       </categories>
       <tags>
-        <tag>flex</tag>
         <tag>布局</tag>
+        <tag>flex</tag>
       </tags>
   </entry>
   <entry>
@@ -391,9 +391,9 @@
         <category>css</category>
       </categories>
       <tags>
-        <tag>border</tag>
         <tag>overflow</tag>
         <tag>box</tag>
+        <tag>border</tag>
       </tags>
   </entry>
   <entry>
@@ -463,10 +463,10 @@
         <category>css</category>
       </categories>
       <tags>
+        <tag>border</tag>
         <tag>盒模型</tag>
         <tag>margin</tag>
         <tag>padding</tag>
-        <tag>border</tag>
       </tags>
   </entry>
   <entry>
@@ -547,17 +547,16 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[语法]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E8%AF%AD%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[语法语法-结构 没有结束标签 除了img还有以下没有结束标签 input meta link area hr br col base embed param source track wbr 语法-属性 checked readonly required selected 语法-嵌套 语法-注释 全局属性 id &lt;div id=&quot;nav&quot;&gt;&lt;/div&gt; class &lt;div class=&quot;time&quot;&gt;&lt;/div&gt; style &lt;div style=&quot;display:none&quot;&gt;&lt;/div&gt; title &lt;div title=&quot;收藏&quot;&gt;&lt;/div&gt; 实体字符实体字符表示]]></content>
+    <title><![CDATA[文档标题]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E6%96%87%E6%A1%A3%E6%A0%87%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[文档标题 &lt;title&gt; 文档的标题或名称 一个文档最多一个标题 元素内容当做文本处理 通过脚本设置、获取标题 document.title 文档标题应用案例进度提示]]></content>
       <categories>
         <category>web</category>
         <category>html</category>
       </categories>
       <tags>
-        <tag>语法</tag>
-        <tag>实体字符</tag>
-        <tag>全局属性</tag>
+        <tag>title</tag>
+        <tag>进度条</tag>
       </tags>
   </entry>
   <entry>
@@ -572,6 +571,20 @@
         <tag>表格</tag>
         <tag>table</tag>
         <tag>表格元素</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[语法]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[语法语法-结构 没有结束标签 除了img还有以下没有结束标签 input meta link area hr br col base embed param source track wbr 语法-属性 checked readonly required selected 语法-嵌套 语法-注释 全局属性 id &lt;div id=&quot;nav&quot;&gt;&lt;/div&gt; class &lt;div class=&quot;time&quot;&gt;&lt;/div&gt; style &lt;div style=&quot;display:none&quot;&gt;&lt;/div&gt; title &lt;div title=&quot;收藏&quot;&gt;&lt;/div&gt; 实体字符实体字符表示]]></content>
+      <categories>
+        <category>web</category>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+        <tag>实体字符</tag>
+        <tag>全局属性</tag>
       </tags>
   </entry>
   <entry>
@@ -601,20 +614,6 @@
         <tag>blockquote</tag>
         <tag>em</tag>
         <tag>文本语义</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[插入脚本]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E6%8F%92%E5%85%A5%E8%84%9A%E6%9C%AC%2F</url>
-    <content type="text"><![CDATA[插入脚本 行内脚本 on[EventName] 事件触发 javascript 伪协议 内嵌脚本 script 元素 外联脚本 script 元素 内嵌脚本 type 默认为 text/javascript JavaScript 脚本类型 JavaScript 脚本建议不写 type module (ES6) 数据块 浏览器不做脚本解析 外联脚本 async/defer 布尔属性 并行加载脚本 async 立即执行 defer HTML解析完成后执行 如果async和defer同时设置，会按async执行 &lt;script&gt; &lt;script defer&gt; &lt;script async&gt; crossorigin（跨域） Classic Scripts - 是否走CORS流程 - 是否暴露异常的详细信息 - 控制脚本请求时是否携带用户授信信息，如 cookie 等 Module Scripts - 控制脚本请求时是否携带用户授信信息，如 cookie 等 案例]]></content>
-      <categories>
-        <category>web</category>
-        <category>html</category>
-      </categories>
-      <tags>
-        <tag>行内脚本</tag>
-        <tag>内嵌脚本</tag>
-        <tag>外联脚本</tag>
       </tags>
   </entry>
   <entry>
@@ -663,16 +662,17 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[文档标题]]></title>
-    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E6%96%87%E6%A1%A3%E6%A0%87%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[文档标题 &lt;title&gt; 文档的标题或名称 一个文档最多一个标题 元素内容当做文本处理 通过脚本设置、获取标题 document.title 文档标题应用案例进度提示]]></content>
+    <title><![CDATA[插入脚本]]></title>
+    <url>%2F2018%2F06%2F08%2Fweb%2Fhtml%2F%E6%8F%92%E5%85%A5%E8%84%9A%E6%9C%AC%2F</url>
+    <content type="text"><![CDATA[插入脚本 行内脚本 on[EventName] 事件触发 javascript 伪协议 内嵌脚本 script 元素 外联脚本 script 元素 内嵌脚本 type 默认为 text/javascript JavaScript 脚本类型 JavaScript 脚本建议不写 type module (ES6) 数据块 浏览器不做脚本解析 外联脚本 async/defer 布尔属性 并行加载脚本 async 立即执行 defer HTML解析完成后执行 如果async和defer同时设置，会按async执行 &lt;script&gt; &lt;script defer&gt; &lt;script async&gt; crossorigin（跨域） Classic Scripts - 是否走CORS流程 - 是否暴露异常的详细信息 - 控制脚本请求时是否携带用户授信信息，如 cookie 等 Module Scripts - 控制脚本请求时是否携带用户授信信息，如 cookie 等 案例]]></content>
       <categories>
         <category>web</category>
         <category>html</category>
       </categories>
       <tags>
-        <tag>title</tag>
-        <tag>进度条</tag>
+        <tag>行内脚本</tag>
+        <tag>内嵌脚本</tag>
+        <tag>外联脚本</tag>
       </tags>
   </entry>
 </search>
